@@ -15,7 +15,38 @@ function App() {
 		}
 	}, [dispatch, items]);
 
-	return <div>hola {items.length}</div>;
+	return (
+		<>
+			<h1>Part 1</h1>
+			{items.length}
+			{items.map(({ feature }) => (
+				<div className="features-featureItem">
+					<h2>Feature {feature.id}</h2>
+					<table>
+						<thead>
+							<th>Control</th>
+							<th>Control</th>
+							<th>Control</th>
+						</thead>
+
+						<tbody>
+							{feature.controls.map((control) => (
+								<>
+									{control?.meassurements?.map((control) => (
+										<tr>
+											<th>{control.name}</th>
+											<th>{control.dev}</th>
+											<th>{control.devOutTotal}</th>
+										</tr>
+									))}
+								</>
+							))}
+						</tbody>
+					</table>
+				</div>
+			))}
+		</>
+	);
 }
 
 export default App;

@@ -2,232 +2,342 @@ const controls = [
 	{
 		id: 1,
 		feature: 1,
-		meassurements: {
-			x: {
+		meassurements: [
+			{
+				name: 'x',
 				value: 23,
 				dev: 1,
 				devOutTotal: 0.24
 			},
-			y: {
+			{
+				name: 'y',
 				value: 12,
 				dev: 1,
 				devOutTotal: 0.24
 			},
-			z: {
+			{
+				name: 'z',
 				value: 14,
 				dev: 1,
 				devOutTotal: 0.24
+			},
+			{
+				name: 'length',
+				value: 0.57,
+				devOutTotal: 0.76
+			},
+			{
+				name: 'diameter',
+				value: 2.4,
+				devOutTotal: 2.76
 			}
-		},
-		length: 0.57,
-		diameter: 1
+		]
 	},
 	{
 		id: 2,
 		feature: 1,
-		meassurements: {
-			x: {
+		meassurements: [
+			{
+				name: 'x',
 				value: 23,
 				dev: 1,
 				devOutTotal: 0.24
 			},
-			y: {
+			{
+				name: 'y',
 				value: 12,
 				dev: 1,
 				devOutTotal: 0.24
 			},
-			z: {
+			{
+				name: 'z',
 				value: 14,
 				dev: 1,
 				devOutTotal: 0.24
+			},
+			{
+				name: 'length',
+				value: 0.57,
+				devOutTotal: 0.76
+			},
+			{
+				name: 'diameter',
+				value: 2.4,
+				devOutTotal: 2.76
 			}
-		},
-		length: 0.57,
-		diameter: 1
+		]
 	},
 	{
 		id: 3,
 		feature: 1,
-		meassurements: {
-			x: {
+		meassurements: [
+			{
+				name: 'x',
 				value: 23,
 				dev: 1,
 				devOutTotal: 0.24
 			},
-			y: {
+			{
+				name: 'y',
 				value: 12,
 				dev: 1,
 				devOutTotal: 0.24
 			},
-			z: {
+			{
+				name: 'z',
 				value: 14,
 				dev: 1,
 				devOutTotal: 0.24
+			},
+			{
+				name: 'length',
+				value: 0.57,
+				devOutTotal: 0.76
+			},
+			{
+				name: 'diameter',
+				value: 2.4,
+				devOutTotal: 2.76
 			}
-		},
-		length: 0.57,
-		diameter: 1
+		]
 	},
 	{
 		id: 4,
 		feature: 2,
-		meassurements: {
-			x: {
+		meassurements: [
+			{
+				name: 'x',
 				value: 23,
 				dev: 1,
 				devOutTotal: 0.24
 			},
-			y: {
+			{
+				name: 'y',
 				value: 12,
 				dev: 1,
 				devOutTotal: 0.24
 			},
-			z: {
+			{
+				name: 'z',
 				value: 14,
 				dev: 1,
 				devOutTotal: 0.24
+			},
+			{
+				name: 'length',
+				value: 0.57,
+				devOutTotal: 0.76
+			},
+			{
+				name: 'diameter',
+				value: 2.4,
+				devOutTotal: 2.76
 			}
-		},
-		length: 0.57,
-		diameter: 1
+		]
 	},
 	{
 		id: 5,
 		feature: 2,
-		meassurements: {
-			x: {
+		meassurements: [
+			{
+				name: 'x',
 				value: 23,
 				dev: 1,
 				devOutTotal: 0.24
 			},
-			y: {
+			{
+				name: 'y',
 				value: 12,
 				dev: 1,
 				devOutTotal: 0.24
 			},
-			z: {
+			{
+				name: 'z',
 				value: 14,
 				dev: 1,
 				devOutTotal: 0.24
+			},
+			{
+				name: 'length',
+				value: 0.57,
+				devOutTotal: 0.76
+			},
+			{
+				name: 'diameter',
+				value: 2.4,
+				devOutTotal: 2.76
 			}
-		},
-		length: 0.57,
-		diameter: 1
+		]
 	},
 	{
 		id: 6,
 		feature: 3,
-		meassurements: {
-			x: {
+		meassurements: [
+			{
+				name: 'x',
 				value: 23,
 				dev: 1,
 				devOutTotal: 0.24
 			},
-			y: {
+			{
+				name: 'y',
 				value: 12,
 				dev: 1,
 				devOutTotal: 0.24
 			},
-			z: {
+			{
+				name: 'z',
 				value: 14,
 				dev: 1,
 				devOutTotal: 0.24
+			},
+			{
+				name: 'length',
+				value: 0.57,
+				devOutTotal: 0.76
+			},
+			{
+				name: 'diameter',
+				value: 2.4,
+				devOutTotal: 2.76
 			}
-		},
-		length: 0.57,
-		diameter: 1
+		]
 	},
 	{
 		id: 7,
 		feature: 4,
-		meassurements: {
-			x: {
+		meassurements: [
+			{
+				name: 'x',
 				value: 23,
 				dev: 1,
 				devOutTotal: 0.24
 			},
-			y: {
+			{
+				name: 'y',
 				value: 12,
 				dev: 1,
 				devOutTotal: 0.24
 			},
-			z: {
+			{
+				name: 'z',
 				value: 14,
 				dev: 1,
 				devOutTotal: 0.24
+			},
+			{
+				name: 'length',
+				value: 0.57,
+				devOutTotal: 0.76
+			},
+			{
+				name: 'diameter',
+				value: 2.4,
+				devOutTotal: 2.76
 			}
-		},
-		length: 0.57,
-		diameter: 1
+		]
 	},
 	{
 		id: 8,
 		feature: 5,
-		meassurements: {
-			x: {
+		meassurements: [
+			{
+				name: 'x',
 				value: 23,
 				dev: 1,
 				devOutTotal: 0.24
 			},
-			y: {
+			{
+				name: 'y',
 				value: 12,
 				dev: 1,
 				devOutTotal: 0.24
 			},
-			z: {
+			{
+				name: 'z',
 				value: 14,
 				dev: 1,
 				devOutTotal: 0.24
+			},
+			{
+				name: 'length',
+				value: 0.57,
+				devOutTotal: 0.76
+			},
+			{
+				name: 'diameter',
+				value: 2.4,
+				devOutTotal: 2.76
 			}
-		},
-		length: 0.57,
-		diameter: 1
+		]
 	},
 	{
 		id: 9,
 		feature: 6,
-		meassurements: {
-			x: {
+		meassurements: [
+			{
+				name: 'x',
 				value: 23,
 				dev: 1,
 				devOutTotal: 0.24
 			},
-			y: {
+			{
+				name: 'y',
 				value: 12,
 				dev: 1,
 				devOutTotal: 0.24
 			},
-			z: {
+			{
+				name: 'z',
 				value: 14,
 				dev: 1,
 				devOutTotal: 0.24
+			},
+			{
+				name: 'length',
+				value: 0.57,
+				devOutTotal: 0.76
+			},
+			{
+				name: 'diameter',
+				value: 2.4,
+				devOutTotal: 2.76
 			}
-		},
-		length: 0.57,
-		diameter: 1
+		]
 	},
 	{
 		id: 10,
 		feature: 6,
-		meassurements: {
-			x: {
+		meassurements: [
+			{
+				name: 'x',
 				value: 23,
 				dev: 1,
 				devOutTotal: 0.24
 			},
-			y: {
+			{
+				name: 'y',
 				value: 12,
 				dev: 1,
 				devOutTotal: 0.24
 			},
-			z: {
+			{
+				name: 'z',
 				value: 14,
 				dev: 1,
 				devOutTotal: 0.24
+			},
+			{
+				name: 'length',
+				value: 0.57,
+				devOutTotal: 0.76
+			},
+			{
+				name: 'diameter',
+				value: 2.4,
+				devOutTotal: 2.76
 			}
-		},
-		length: 0.57,
-		diameter: 1
+		]
 	}
 ];
 
