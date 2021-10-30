@@ -1,25 +1,21 @@
 import logo from './logo.svg';
-import './App.css';
+import './app.scss';
+import { useDispatch, useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import { startFetch } from './store/features/feature-actions';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const dispatch = useDispatch();
+	const { items } = useSelector((state) => {
+		return state.features;
+	});
+	useEffect(() => {
+		if (!items || items.length === 0) {
+			dispatch(startFetch());
+		}
+	}, [dispatch, items]);
+
+	return <div>hola {items.length}</div>;
 }
 
 export default App;
