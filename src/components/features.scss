@@ -1,0 +1,81 @@
+$bg: #d2d2d2;
+
+.features {
+	&-itemValues {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		text-transform: capitalize;
+		width: 100%;
+
+		.status {
+			&.danger {
+				&::before {
+					background-color: red;
+					border-radius: 50%;
+					content: '';
+					width: 4px;
+					height: 4px;
+				}
+				width: 10px;
+				border: solid 2px red;
+				height: 10px;
+				border-radius: 50%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+	}
+
+	&-featureContent {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+
+	&-featureItem {
+		background-color: $bg;
+		&:first-of-type {
+			flex-basis: 730px;
+			min-width: 730px;
+			flex-basis: 49%;
+		}
+		&:last-of-type {
+			flex-basis: 450px;
+			min-width: 450px;
+		}
+		border: solid;
+		height: 500px;
+		overflow: hidden;
+
+		:nth-child(2) {
+		}
+		:nth-child(3) {
+		}
+		:nth-child(4) {
+		}
+		:nth-child(5) {
+		}
+	}
+	&-flexHelper {
+		border: solid 1 px;
+		display: flex;
+		flex-direction: column;
+		width: 95%;
+	}
+
+	&-control {
+		padding: 16px;
+		height: 40px;
+	}
+}
+
+.itemValuesContainer {
+	display: flex;
+	border: solid 1 px red;
+	flex-basis: 48%;
+	flex-direction: column;
+	flex-wrap: wrap;
+}

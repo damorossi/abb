@@ -1,8 +1,8 @@
-import logo from './logo.svg';
-import './app.scss';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { startFetch } from './store/features/feature-actions';
+import FeaturesItemComponent from './components/FeaturesItemComponent';
+import './app.scss';
 
 function App() {
 	const dispatch = useDispatch();
@@ -19,32 +19,11 @@ function App() {
 		<>
 			<h1>Part 1</h1>
 			{items.length}
-			{items.map(({ feature }) => (
-				<div className="features-featureItem">
-					<h2>Feature {feature.id}</h2>
-					<table>
-						<thead>
-							<th>Control</th>
-							<th>Control</th>
-							<th>Control</th>
-						</thead>
-
-						<tbody>
-							{feature.controls.map((control) => (
-								<>
-									{control?.meassurements?.map((control) => (
-										<tr>
-											<th>{control.name}</th>
-											<th>{control.dev}</th>
-											<th>{control.devOutTotal}</th>
-										</tr>
-									))}
-								</>
-							))}
-						</tbody>
-					</table>
-				</div>
-			))}
+			<div className="features-container">
+				{items.map(({ feature }) => (
+					<FeaturesItemComponent feature={feature} key={feature.id} />
+				))}
+			</div>
 		</>
 	);
 }

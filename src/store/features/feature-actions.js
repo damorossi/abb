@@ -7,7 +7,6 @@ export const startFetch = () => {
 	return (dispatch) => {
 		// dispatch(uiStartLoading());
 		const data = fetchApiData();
-		debugger;
 		return dispatch(loadFeatures(data));
 	};
 };
