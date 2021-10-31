@@ -1,4 +1,5 @@
 $bg: #d2d2d2;
+$bg-warn: #e9c704;
 
 .features {
 	&-itemValues {
@@ -9,46 +10,86 @@ $bg: #d2d2d2;
 		width: 100%;
 
 		.status {
+			align-items: center;
+			border-radius: 50%;
+			display: flex;
+			height: 10px;
+			justify-content: center;
+			margin-left: -20%;
+			width: 10px;
+
 			&.danger {
+				border: solid 2px red;
 				&::before {
 					background-color: red;
 					border-radius: 50%;
 					content: '';
-					width: 4px;
 					height: 4px;
+					width: 4px;
 				}
-				width: 10px;
-				border: solid 2px red;
-				height: 10px;
-				border-radius: 50%;
-				display: flex;
-				justify-content: center;
-				align-items: center;
+			}
+
+			&.success {
+				border: solid 2px rgb(89, 144, 89);
+				transform: (rotate(-45deg));
+				&::before {
+					background-color: #090;
+					content: '';
+					height: 3px;
+					margin-left: 0px;
+					margin-top: 0px;
+					width: 1px;
+				}
+
+				&::after {
+					background-color: #090;
+					content: '';
+					height: 1px;
+					margin-top: 2px;
+					width: 4px;
+				}
+			}
+
+			&.warning {
+				border: solid 2px #e9c704;
+				&::after {
+					color: #e9c704;
+					content: '!';
+					font-size: 8px;
+					width: 4px;
+				}
 			}
 		}
+	}
+	&-featureTitle {
+		background-color: $bg-warn;
+		color: white;
+		padding: 16px;
 	}
 
 	&-featureContent {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
+		padding: 16px;
 		width: 100%;
 	}
 
 	&-featureItem {
 		background-color: $bg;
+		border: solid;
+		height: 500px;
+		overflow: hidden;
+
 		&:first-of-type {
 			flex-basis: 730px;
 			min-width: 730px;
-			flex-basis: 49%;
 		}
+
 		&:last-of-type {
 			flex-basis: 450px;
 			min-width: 450px;
 		}
-		border: solid;
-		height: 500px;
-		overflow: hidden;
 
 		:nth-child(2) {
 		}

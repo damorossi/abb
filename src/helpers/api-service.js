@@ -15,14 +15,14 @@ const controls = [
 				name: 'y',
 				value: 12,
 				dev: 1,
-				devOutTotal: 0.24
+				devOutTotal: 1.24
 			},
 			{
 				id: 3,
 				name: 'z',
 				value: 14,
 				dev: 1,
-				devOutTotal: 0.24
+				devOutTotal: 2.24
 			},
 			{
 				id: 4,
@@ -47,7 +47,7 @@ const controls = [
 				name: 'x',
 				value: 23,
 				dev: 1,
-				devOutTotal: 0.24
+				devOutTotal: 1.24
 			},
 			{
 				id: 7,
@@ -61,13 +61,13 @@ const controls = [
 				name: 'z',
 				value: 14,
 				dev: 1,
-				devOutTotal: 0.24
+				devOutTotal: 2.24
 			},
 			{
 				id: 9,
 				name: 'length',
 				value: 0.57,
-				devOutTotal: 0.76
+				devOutTotal: 1.76
 			},
 			{
 				id: 10,
@@ -86,33 +86,33 @@ const controls = [
 				name: 'x',
 				value: 23,
 				dev: 1,
-				devOutTotal: 0.24
+				devOutTotal: 1.24
 			},
 			{
 				id: 12,
 				name: 'y',
 				value: 12,
 				dev: 1,
-				devOutTotal: 0.24
+				devOutTotal: 1.24
 			},
 			{
 				id: 13,
 				name: 'z',
 				value: 14,
 				dev: 1,
-				devOutTotal: 0.24
+				devOutTotal: 2.24
 			},
 			{
 				id: 14,
 				name: 'length',
 				value: 0.57,
-				devOutTotal: 0.76
+				devOutTotal: 1.76
 			},
 			{
 				id: 15,
 				name: 'diameter',
 				value: 2.4,
-				devOutTotal: 2.76
+				devOutTotal: 0.76
 			}
 		]
 	},
@@ -164,7 +164,7 @@ const controls = [
 				name: 'x',
 				value: 23,
 				dev: 1,
-				devOutTotal: 0.24
+				devOutTotal: 1.24
 			},
 			{
 				id: 22,
@@ -178,19 +178,19 @@ const controls = [
 				name: 'z',
 				value: 14,
 				dev: 1,
-				devOutTotal: 0.24
+				devOutTotal: 1.24
 			},
 			{
 				id: 24,
 				name: 'length',
 				value: 0.57,
-				devOutTotal: 0.76
+				devOutTotal: 2.76
 			},
 			{
 				id: 25,
 				name: 'diameter',
 				value: 2.4,
-				devOutTotal: 2.76
+				devOutTotal: 0.76
 			}
 		]
 	},
