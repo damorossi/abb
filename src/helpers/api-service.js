@@ -193,201 +193,6 @@ const controls = [
 				devOutTotal: 0.76
 			}
 		]
-	},
-	{
-		id: 6,
-		feature: 3,
-		meassurements: [
-			{
-				id: 26,
-				name: 'x',
-				value: 23,
-				dev: 1,
-				devOutTotal: 0.24
-			},
-			{
-				id: 27,
-				name: 'y',
-				value: 12,
-				dev: 1,
-				devOutTotal: 0.24
-			},
-			{
-				id: 28,
-				name: 'z',
-				value: 14,
-				dev: 1,
-				devOutTotal: 0.24
-			},
-			{
-				id: 29,
-				name: 'length',
-				value: 0.57,
-				devOutTotal: 0.76
-			},
-			{
-				id: 30,
-				name: 'diameter',
-				value: 2.4,
-				devOutTotal: 2.76
-			}
-		]
-	},
-	{
-		id: 7,
-		feature: 4,
-		meassurements: [
-			{
-				id: 31,
-				name: 'x',
-				value: 23,
-				dev: 1,
-				devOutTotal: 0.24
-			},
-			{
-				id: 32,
-				name: 'y',
-				value: 12,
-				dev: 1,
-				devOutTotal: 0.24
-			},
-			{
-				id: 33,
-				name: 'z',
-				value: 14,
-				dev: 1,
-				devOutTotal: 0.24
-			},
-			{
-				id: 34,
-				name: 'length',
-				value: 0.57,
-				devOutTotal: 0.76
-			},
-			{
-				id: 35,
-				name: 'diameter',
-				value: 2.4,
-				devOutTotal: 2.76
-			}
-		]
-	},
-	{
-		id: 8,
-		feature: 5,
-		meassurements: [
-			{
-				id: 36,
-				name: 'x',
-				value: 23,
-				dev: 1,
-				devOutTotal: 0.24
-			},
-			{
-				id: 37,
-				name: 'y',
-				value: 12,
-				dev: 1,
-				devOutTotal: 0.24
-			},
-			{
-				id: 38,
-				name: 'z',
-				value: 14,
-				dev: 1,
-				devOutTotal: 0.24
-			},
-			{
-				id: 39,
-				name: 'length',
-				value: 0.57,
-				devOutTotal: 0.76
-			},
-			{
-				id: 40,
-				name: 'diameter',
-				value: 2.4,
-				devOutTotal: 2.76
-			}
-		]
-	},
-	{
-		id: 9,
-		feature: 6,
-		meassurements: [
-			{
-				id: 41,
-				name: 'x',
-				value: 23,
-				dev: 1,
-				devOutTotal: 0.24
-			},
-			{
-				id: 42,
-				name: 'y',
-				value: 12,
-				dev: 1,
-				devOutTotal: 0.24
-			},
-			{
-				id: 43,
-				name: 'z',
-				value: 14,
-				dev: 1,
-				devOutTotal: 0.24
-			},
-			{
-				id: 44,
-				name: 'length',
-				value: 0.57,
-				devOutTotal: 0.76
-			},
-			{
-				id: 45,
-				name: 'diameter',
-				value: 2.4,
-				devOutTotal: 2.76
-			}
-		]
-	},
-	{
-		id: 10,
-		feature: 6,
-		meassurements: [
-			{
-				id: 46,
-				name: 'x',
-				value: 23,
-				dev: 1,
-				devOutTotal: 0.24
-			},
-			{
-				id: 47,
-				name: 'y',
-				value: 12,
-				dev: 1,
-				devOutTotal: 0.24
-			},
-			{
-				id: 48,
-				name: 'z',
-				value: 14,
-				dev: 1,
-				devOutTotal: 0.24
-			},
-			{
-				id: 49,
-				name: 'length',
-				value: 0.57,
-				devOutTotal: 0.76
-			},
-			{
-				id: 50,
-				name: 'diameter',
-				value: 2.4,
-				devOutTotal: 2.76
-			}
-		]
 	}
 ];
 
@@ -401,32 +206,25 @@ const partsMock = [
 	{
 		feature: {
 			id: 2,
-
-			controls: [controls[3], controls[4]]
+			controls: [controls[4], controls[2], controls[3], controls[0], controls[1]]
 		}
 	},
 	{
 		feature: {
 			id: 3,
-			controls: [controls[5]]
+			controls: [controls[2], controls[3], controls[0], controls[2], controls[1]]
 		}
 	},
 	{
 		feature: {
 			id: 4,
-			controls: [controls[6]]
-		}
-	},
-	{
-		feature: {
-			id: 5,
-			controls: [controls[7]]
+			controls: [controls[1], controls[4], controls[1], controls[1], controls[2]]
 		}
 	},
 	{
 		feature: {
 			id: 6,
-			controls: [controls[8], controls[9]]
+			controls: [controls[0], controls[2], controls[3], controls[1], controls[2]]
 		}
 	}
 ];

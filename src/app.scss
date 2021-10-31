@@ -1,5 +1,15 @@
 .features {
 	&-container {
 		display: flex;
+		flex-direction: column;
+		max-height: 700px;
+		flex-wrap: wrap;
+		width: 95vw;
+	}
+
+	&-listContainer {
+		display: flex;
+		flex-direction: row;
+		height: 500px;
 	}
 }
