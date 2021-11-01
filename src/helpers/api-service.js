@@ -223,7 +223,7 @@ const partsMock = [
 	},
 	{
 		feature: {
-			id: 6,
+			id: 5,
 			controls: [controls[4], controls[4], controls[4], controls[4]]
 		}
 	}

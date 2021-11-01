@@ -44,9 +44,9 @@ const FeaturesItemComponent = ({ feature, onClick, displayAllControls }) => {
 					{!displayAllControls ? (
 						<FeatureControlComponent control={feature.controls[0]} />
 					) : (
-						feature.controls.map((control) => (
-							<div className="item-featureContent">
-								<FeatureControlComponent control={control} key={control.id} />
+						feature.controls.map((control, index) => (
+							<div className="item-featureContent" key={control.id * (Math.random() * (control.id - index) + index)}>
+								<FeatureControlComponent control={control} />
 							</div>
 						))
 					)}

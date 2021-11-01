@@ -2,7 +2,7 @@ import React from 'react';
 import './meassurement.scss';
 
 const MeassurementComponent = ({ meassurements }) => {
-	const { dev, devOutTotal, id, name, value } = meassurements;
+	const { dev, devOutTotal, name } = meassurements;
 	return (
 		<div className="meassurement-container">
 			<div className="meassurement-itemValues">
