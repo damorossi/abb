@@ -22,7 +22,7 @@ const controls = [
 				name: 'z',
 				value: 14,
 				dev: 1,
-				devOutTotal: 2.24
+				devOutTotal: 0.24
 			},
 			{
 				id: 4,
@@ -34,7 +34,7 @@ const controls = [
 				id: 5,
 				name: 'diameter',
 				value: 2.4,
-				devOutTotal: 2.76
+				devOutTotal: 1.76
 			}
 		]
 	},
@@ -61,19 +61,19 @@ const controls = [
 				name: 'z',
 				value: 14,
 				dev: 1,
-				devOutTotal: 2.24
+				devOutTotal: 0.14
 			},
 			{
 				id: 9,
 				name: 'length',
 				value: 0.57,
-				devOutTotal: 1.76
+				devOutTotal: 0.76
 			},
 			{
 				id: 10,
 				name: 'diameter',
 				value: 2.4,
-				devOutTotal: 2.76
+				devOutTotal: 0.16
 			}
 		]
 	},
@@ -200,7 +200,7 @@ const partsMock = [
 	{
 		feature: {
 			id: 1,
-			controls: [controls[0], controls[1], controls[2], controls[3], controls[4]]
+			controls: [controls[0], controls[1], controls[0], controls[2], controls[0]]
 		}
 	},
 	{
@@ -212,7 +212,7 @@ const partsMock = [
 	{
 		feature: {
 			id: 3,
-			controls: [controls[2], controls[3], controls[0], controls[2], controls[1]]
+			controls: [controls[3], controls[0], controls[1], controls[1], controls[0]]
 		}
 	},
 	{

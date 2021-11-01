@@ -10,27 +10,41 @@ function App() {
 	const { items } = useSelector((state) => {
 		return state.features;
 	});
+
 	useEffect(() => {
 		dispatch(startFetch());
 	}, [dispatch, items]);
 
 	const selectItem = (item) => {
 		setItem(item);
-		console.log('ey', item);
 	};
 
+	// Simulate fetch data every 10 secs
+	const loadData = () => {
+		setTimeout(() => {
+			dispatch(startFetch());
+			loadData();
+		});
+	};
+
+	// call to constant data fetching
+	setTimeout(() => {
+		loadData();
+	}, 10000);
 	return (
 		<>
 			<h1>Part 1</h1>
 			<div className="features-listContainer">
 				{selectedItem && (
-					<div className="features-selectedFeature">
-						<FeaturesItemComponent feature={selectedItem} onClick={selectItem} displayAllControls={true} />
+					<div className="loquesea">
+						<div className="item-selectedFeature">
+							<FeaturesItemComponent feature={selectedItem} onClick={selectItem} displayAllControls={true} />
+						</div>
 					</div>
 				)}
 				<div className="features-container">
 					{items.map(({ feature }) => (
-						<FeaturesItemComponent onClick={selectItem} feature={feature} key={feature.id} />
+						<FeaturesItemComponent onClick={selectItem} feature={feature} key={feature.id.toString()} />
 					))}
 				</div>
 			</div>

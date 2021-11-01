@@ -6,7 +6,7 @@ const MeassurementComponent = ({ meassurements }) => {
 	return (
 		<div className="meassurement-container">
 			<div className="meassurement-itemValues">
-				<div>{name}</div>
+				<div className="meassurement-name">{name}</div>
 				<div>{dev}</div>
 				<div>{devOutTotal}</div>
 				<span className={`status ${devOutTotal < 1 ? 'success' : devOutTotal > 2 ? 'danger' : 'warning'}`}></span>

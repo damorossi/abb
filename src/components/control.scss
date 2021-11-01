@@ -1,13 +1,11 @@
-$bg: #d2d2d2;
-$bg-warn: #e9c704;
+@import './../colors.scss';
 
 .control {
 	&-flexHelper {
-		border: solid 1 px;
 		display: flex;
 		flex-direction: column;
 		padding: 5px;
-		width: 95%;
+		width: 100%;
 	}
 
 	&-control {

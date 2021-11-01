@@ -1,19 +1,39 @@
-$bg: #d2d2d2;
-$bg-warn: #e9c704;
+@import './../colors.scss';
 
-.features {
+.item {
+	&-titles {
+		display: flex;
+		font-weight: bolder;
+		flex-direction: row;
+		width: 100%;
+
+		.meassurement-itemValues {
+			margin-right: 10px;
+		}
+	}
+
 	&-featureTitle {
-		background-color: $bg-warn;
 		color: white;
 		padding: 16px;
+		text-transform: uppercase;
+
+		&.success {
+			background-color: $bg-success;
+		}
+		&.warning {
+			background-color: $bg-warn;
+		}
+		&.danger {
+			background-color: $bg-danger;
+		}
 	}
 
 	&-featureContent {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		padding: 16px;
-		width: 100%;
+		padding: 16px 0;
+		width: 50%;
 	}
 
 	&-selectedItem {
@@ -25,23 +45,23 @@ $bg-warn: #e9c704;
 
 	&-selectedFeature {
 		display: flex;
-		width: 730px;
+		height: 500px;
+		max-width: 730px;
 	}
 	&-featureItem {
 		background-color: $bg;
-		border: solid;
+		border: solid white;
 		flex-basis: 50%;
 		overflow: hidden;
 
 		&:last-of-type {
 			flex-grow: 1;
-			align-self: strech;
 		}
 	}
 	&-flexHelper {
-		border: solid 1 px;
 		display: flex;
-		flex-direction: column;
+		flex-wrap: wrap;
+		padding: 16px;
 		width: 95%;
 	}
 
@@ -53,8 +73,7 @@ $bg-warn: #e9c704;
 
 .itemValuesContainer {
 	margin-top: 20px;
-	background: yellow;
-	border: solid 1 px red;
+	background: $bg-warn;
 	display: flex;
 	flex-basis: 48%;
 	flex-direction: column;
