@@ -33,7 +33,6 @@ function App() {
 	}, 10000);
 	return (
 		<>
-			<h1>Part 1</h1>
 			<div className="features-listContainer">
 				{selectedItem && (
 					<div className="loquesea">

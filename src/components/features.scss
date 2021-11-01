@@ -45,19 +45,22 @@
 
 	&-selectedFeature {
 		display: flex;
-		height: 500px;
+		height: 100%;
 		max-width: 730px;
 	}
+
 	&-featureItem {
 		background-color: $bg;
 		border: solid white;
 		flex-basis: 50%;
 		overflow: hidden;
+		position: relative;
 
 		&:last-of-type {
 			flex-grow: 1;
 		}
 	}
+
 	&-flexHelper {
 		display: flex;
 		flex-wrap: wrap;
@@ -85,4 +88,14 @@
 	display: flex;
 	justify-content: space-between;
 	width: 50px;
+}
+
+.action {
+	background-color: $bg-greenDark;
+	bottom: 0px;
+	border: none;
+	font-weight: 900;
+	height: 30px;
+	position: absolute;
+	width: 100%;
 }

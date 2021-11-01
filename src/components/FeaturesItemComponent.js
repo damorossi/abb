@@ -52,6 +52,7 @@ const FeaturesItemComponent = ({ feature, onClick, displayAllControls }) => {
 					)}
 				</div>
 			</div>
+			<button className="action"> ... </button>
 		</div>
 	);
 };
